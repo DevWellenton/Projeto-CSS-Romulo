@@ -9,16 +9,26 @@
     <title>Projeto CSS</title>
 </head>
 <body>
-    <div class="container">
-        <div class="">FORMULÁRIO DE CADASTRO DE CURSO</div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu de Cadastro
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="curso.html">Curso</a></li>
+          <li><a class="dropdown-item" href="disciplina.html">Disciplina</a></li>
+          <li><a class="dropdown-item" href="professor.html">Professor</a></li>
+        </ul>
+    </div>
+    <div class="container mb-3 col-md-6">
+        <div class="text-center">FORMULÁRIO DE CADASTRO DE CURSO</div>
         <hr>
         <form>
-            <div class="mb-3">
+            <div class="mb-3 col-md-12">
                 <label for="Nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="Nome">
             </div>
-            <div class="mb-3">
-                <label for="Fase" class="form-label">Fase</label>
+            <div class="mb-3 col-md-12">
+                <label for="Fase" class="form-label">Turno</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Selecione o turno</option>
                     <option value="M">Matutino</option>
@@ -26,20 +36,13 @@
                     <option value="N">Noturno</option>
                 </select>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-md-12">
                 <label for="Coordenador" class="form-label">Coordenador</label>
                 <input type="text" class="form-control" id="Coordenador">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-md-12">
                 <label for="CargaHoraria" class="form-label">Carga Horaria</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Selecione a carga Horaria</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="3">4</option>
-                    <option value="3">5</option>
-                </select>
+                <input type="text" class="form-control" id="CargaHoraria">
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>

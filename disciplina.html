@@ -9,15 +9,25 @@
     <title>Projeto CSS</title>
 </head>
 <body>
-    <div class="container">
-        <div class="">FORMULÁRIO DE CADASTRO DE DISCIPLINA</div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu de Cadastro
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="curso.html">Curso</a></li>
+          <li><a class="dropdown-item" href="disciplina.html">Disciplina</a></li>
+          <li><a class="dropdown-item" href="professor.html">Professor</a></li>
+        </ul>
+    </div>
+    <div class="container mb-3 col-md-6">
+        <div class="text-center">FORMULÁRIO DE CADASTRO DE DISCIPLINA</div>
         <hr>
         <form>
-            <div class="mb-3">
+            <div class="mb-3 col-md-12">
                 <label for="Nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="Nome">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-md-12">
                 <label for="Fase" class="form-label">Fase</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Selecione uma Fase</option>
@@ -33,11 +43,11 @@
                     <option value="10">10º Fase</option>
                 </select>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-md-12">
                 <label for="Curso" class="form-label">Curso</label>
                 <input type="text" class="form-control" id="Curso">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-md-12">
                 <label for="Professor" class="form-label">Professor</label>
                 <input type="text" class="form-control" id="Professor">
             </div>
